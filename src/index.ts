@@ -1,3 +1,6 @@
+import './log';
+
+log('started app');
 const root = document.getElementById("root");
 root.textContent = "root";
 
@@ -7,7 +10,7 @@ const AudioContext = window.AudioContext || window.webkitAudioContext;
 const context = new AudioContext();
 const osc = context.createOscillator();
 const amp = context.createGain();
-
+let a:number = 12;
 osc.connect(amp);
 amp.connect(context.destination);
 osc.start();
