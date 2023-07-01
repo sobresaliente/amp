@@ -1,7 +1,8 @@
 
 import { render } from "react-dom";
-import './index.scss';
+import classes from './index.module.scss';
+import App from "./App";
 
 render(
-  <div>Help me</div>, document.getElementById("root")
+  <div className={classes.btn}>Help me<App /></div>, document.getElementById("root")
 )
